@@ -1,0 +1,36 @@
+\documentclass[letter,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{fullpage}
+\usepackage{graphicx}
+\usepackage{datetime}
+
+\usepackage[backend=biber,maxbibnames=99,defernumbers=true,bibstyle=numeric]{biblatex}
+%	\addbibresource[datatype=bibtex]{Bibliography.bib}
+
+\newdateformat{mydate}{\THEDAY\space \shortmonthname[\THEMONTH] \THEYEAR}
+
+\begin{document}
+
+	\begin{tabular}{l l}
+	To: & Prof. Richard Wolff \\
+	From: & Sam Harkness \\
+	Regarding: & Final Project Proposal \\
+	Date: & \mydate\today \\
+	\end{tabular}
+
+	\begin{abstract}
+		The radiation tolerant computing team at Montana State University has received a grant to integrate a prototype computer system into an SSEL CubeSat.  In order to receive data from the orbiting system, information is packetized and sent down using the frequency spectrum reserved for Ham radio operators. This report will describe the history of using packet technology on amateur radio, describe the system used by SSEL, and finally characterize the communications system using OpNet IT Guru.
+	\end{abstract}
+
+	\section{Outline}
+		\begin{itemize}
+			\item Background
+			\begin{itemize}
+				{\item History of Ham Radio
+				\item TCP/IP on Ham Radio (AMPRNet)}
+			\end{itemize}
+			\item SSEL Satellite Communication System
+			\item Modeling and Simulation
+		\end{itemize}
+
+\end{document}
